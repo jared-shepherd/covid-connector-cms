@@ -4,15 +4,11 @@
     "default": {
       "connector": "mongoose",
       "settings": {
-        "database": "covid-connector",
-        "host": "127.0.0.1",
-        "srv": false,
-        "port": 27017,
-        "username": "",
-        "password": ""
+        "database": "covid-connector-cms",
+        "uri": "${process.env.DB_URI || ''}"
       },
       "options": {
-        "authenticationDatabase": ""
+        "ssl": "true"
       }
     }
   }
