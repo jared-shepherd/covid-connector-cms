@@ -4,8 +4,8 @@
     "default": {
       "connector": "mongoose",
       "settings": {
-        "database": "covid-connector-cms",
-        "uri": "${process.env.DB_URI || ''}"
+        "uri": "${process.env.STAGE_DB_URI}",
+        "database": "${process.env.STAGE_DB_NAME}"
       },
       "options": {
         "ssl": "true"
