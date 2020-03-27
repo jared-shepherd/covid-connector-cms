@@ -11,18 +11,20 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "dotenv": "^8.2.0",
+    "find-config": "^1.0.0",
     "strapi": "3.0.0-beta.18.7",
     "strapi-admin": "3.0.0-beta.18.7",
-    "strapi-utils": "3.0.0-beta.18.7",
-    "strapi-plugin-content-type-builder": "3.0.0-beta.18.7",
+    "strapi-connector-mongoose": "3.0.0-beta.18.7",
     "strapi-plugin-content-manager": "3.0.0-beta.18.7",
-    "strapi-plugin-users-permissions": "3.0.0-beta.18.7",
+    "strapi-plugin-content-type-builder": "3.0.0-beta.18.7",
     "strapi-plugin-email": "3.0.0-beta.18.7",
     "strapi-plugin-upload": "3.0.0-beta.18.7",
-    "strapi-connector-mongoose": "3.0.0-beta.18.7"
+    "strapi-plugin-users-permissions": "3.0.0-beta.18.7",
+    "strapi-utils": "3.0.0-beta.18.7"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Jared Shepherd"
   },
   "strapi": {
     "uuid": "6fac0bca-a648-4d19-89eb-c6908cb2f93f"
