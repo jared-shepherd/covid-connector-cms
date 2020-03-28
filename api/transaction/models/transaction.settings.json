@@ -1,0 +1,44 @@
+{
+  "connection": "default",
+  "collectionName": "transactions",
+  "info": {
+    "name": "transaction"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "request": {
+      "type": "text",
+      "required": true
+    },
+    "create_ts": {
+      "type": "datetime",
+      "required": true
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "transactions"
+    },
+    "volunteers": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "transactions",
+      "dominant": true
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "Open",
+        "Pending",
+        "Fulfilled",
+        "Inactive"
+      ]
+    },
+    "CompleteDate": {
+      "type": "datetime"
+    }
+  }
+}
