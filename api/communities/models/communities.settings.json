@@ -1,0 +1,19 @@
+{
+  "connection": "default",
+  "collectionName": "communities",
+  "info": {
+    "name": "Communities"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "members": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "communities",
+      "dominant": true
+    }
+  }
+}

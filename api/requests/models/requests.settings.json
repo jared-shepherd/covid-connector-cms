@@ -1,0 +1,36 @@
+{
+  "connection": "default",
+  "collectionName": "requests",
+  "info": {
+    "name": "Requests"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Details": {
+      "type": "text"
+    },
+    "requestor": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "volunteer": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "requests"
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "Created",
+        "Pending",
+        "Complete"
+      ]
+    }
+  }
+}
